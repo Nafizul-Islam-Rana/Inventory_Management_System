@@ -103,7 +103,7 @@
 
             showLoader();
             let res = await axios.post("/create-product",formData,config)
-            
+            hideLoader();
 
             if(res.status===201){
                 successToast('Request completed');
@@ -115,5 +115,5 @@
             }
         }
     }
-    hideLoader();
+    
 </script>

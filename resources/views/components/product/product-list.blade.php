@@ -40,7 +40,7 @@ async function getList() {
 
     showLoader();
     let res=await axios.get("/list-product");
-    
+    hideLoader();
 
     let tableList=$("#tableList");
     let tableData=$("#tableData");
@@ -85,7 +85,7 @@ async function getList() {
     });
 
 }
-hideLoader();
+
 
 </script>
 
